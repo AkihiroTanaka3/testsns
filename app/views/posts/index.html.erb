@@ -11,8 +11,8 @@
             <small><%= post.created_at %></small>
         </span>
         <div>
-            # <%= link_to "編集", edit_post_path(post) %>
-            # <%= button_to "削除", post_path(post), method: :delete %>
+            <%= link_to "編集", edit_post_path(post) %>
+            <%= button_to "削除", post_path(post), method: :delete %>
         </div>
         </li>
     <% end %>
