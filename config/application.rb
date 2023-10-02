@@ -18,5 +18,8 @@ module Testsns
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.to_prepare do
+      require 'devise/orm/active_record'
+    end
   end
 end
