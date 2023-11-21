@@ -27,7 +27,7 @@ class User < ApplicationRecord
   end
 
   has_one_attached :profile_image
-  
+  # ユーザーのプロフィール画像を表示する
   def get_profile_image
     unless profile_image.attached?
       file_path = Rails.root.join('app/assets/images/no_image.jpg')
